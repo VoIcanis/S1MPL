@@ -1,0 +1,53 @@
+{
+    "DataType": "MSGConversationData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "ConversationIndex": 4,
+    "Read": true,
+    "MessageHistory": [
+        {
+            "Sender": 1,
+            "MessageID": -106064675,
+            "Text": "You got 2x Aspen Death? I'll pay <color=#46CB4F>$135</color> for it",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 0,
+            "MessageID": 1780964752,
+            "Text": "How about 2x Aspen Death for $155?",
+            "EndOfChain": false
+        },
+        {
+            "Sender": 1,
+            "MessageID": 310998963,
+            "Text": "Alright then. What time?",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 0,
+            "MessageID": 1110568482,
+            "Text": "Late Night",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": 745940032,
+            "Text": "Ok, I'll meet you <b>behind the construction site</b> between 12:00 AM and 6:00 AM.",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": 1589464687,
+            "Text": "Hey, if you got 2x Banana Rhino I'll pay <color=#46CB4F>$210</color> for it. Deal?",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": 445352501,
+            "Text": "Hello?? Nevermind then",
+            "EndOfChain": true
+        }
+    ],
+    "ActiveResponses": [],
+    "IsHidden": false
+}

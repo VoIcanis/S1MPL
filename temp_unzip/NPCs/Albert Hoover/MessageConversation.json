@@ -1,0 +1,71 @@
+{
+    "DataType": "MSGConversationData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "ConversationIndex": 4,
+    "Read": true,
+    "MessageHistory": [
+        {
+            "Sender": 1,
+            "MessageID": -949034879,
+            "Text": "We've been working together for a while now, and you've proven to be quite reliable. ",
+            "EndOfChain": false
+        },
+        {
+            "Sender": 1,
+            "MessageID": -2060377792,
+            "Text": "If you're needing to order larger quantities of supplies, you can now organize an in-person meeting with me. Just send me a text.",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": -183717570,
+            "Text": "I've received $360 cash from you. Your debt is now paid off.",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": 762957498,
+            "Text": "Agreed. I'll be in the west construction site for the next 6 hours.",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": -293377594,
+            "Text": "Hey, that drop is ready on the north exterior wall of the arcade",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 0,
+            "MessageID": 1006248828,
+            "Text": "I need a dead drop:\n4x Granddaddy Purple Seed\n3x Sour Diesel Seed\n3x Green Crack Seed\n",
+            "EndOfChain": false
+        },
+        {
+            "Sender": 1,
+            "MessageID": 666892701,
+            "Text": "Working on it. Should be ready in around 5 hours",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": 1015371184,
+            "Text": "I've received $405 cash from you. Your debt is now paid off.",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": 1794203728,
+            "Text": "Your drop is ready. Grab it behind Thompson Construction",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": -2059683678,
+            "Text": "Agreed. I'll be next to the mayor's house for the next 6 hours.",
+            "EndOfChain": true
+        }
+    ],
+    "ActiveResponses": [],
+    "IsHidden": false
+}

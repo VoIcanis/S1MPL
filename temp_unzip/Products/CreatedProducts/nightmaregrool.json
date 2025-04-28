@@ -1,0 +1,30 @@
+{
+    "DataType": "MethProductData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "Name": "Nightmare Grool",
+    "ID": "nightmaregrool",
+    "DrugType": 1,
+    "Properties": [
+        "munchies",
+        "Euphoric",
+        "foggy",
+        "glowie",
+        "antigravity",
+        "cyclopean"
+    ],
+    "AppearanceSettings": {
+        "MainColor": {
+            "r": 244,
+            "g": 225,
+            "b": 221,
+            "a": 255
+        },
+        "SecondaryColor": {
+            "r": 249,
+            "g": 238,
+            "b": 224,
+            "a": 255
+        }
+    }
+}

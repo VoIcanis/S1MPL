@@ -1,0 +1,83 @@
+{
+    "DataType": "QuestData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "GUID": "1aec12d5-4d6d-46b5-bab8-c12bafe91390",
+    "State": 2,
+    "IsTracked": true,
+    "Title": "Welcome to Hyland Point",
+    "Description": "You're in a new town with no cash and no product. Get in contact with a distant relative and get some advice.",
+    "Expires": false,
+    "ExpiryDate": {
+        "DataType": "GameDateTimeData",
+        "DataVersion": 0,
+        "GameVersion": "0.3.3f15",
+        "ElapsedDays": 0,
+        "Time": 0
+    },
+    "Entries": [
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Open your phone and read your messages",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Talk to 'U.N.' at a payphone",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Collect the stash near the fountain",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Collect the stash near the canal",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Collect the stash behind the supermarket",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Head back to the RV",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Investigate the explosion",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Read the note",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Talk to Uncle Nelson at a payphone",
+            "State": 2
+        }
+    ]
+}

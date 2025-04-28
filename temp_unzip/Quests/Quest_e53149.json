@@ -1,0 +1,27 @@
+{
+    "DataType": "QuestData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "GUID": "e5314966-09b3-42a0-9757-cb1a09acf999",
+    "State": 2,
+    "IsTracked": true,
+    "Title": "Needin' the Green",
+    "Description": "Time to make some MONEY!!!!!",
+    "Expires": false,
+    "ExpiryDate": {
+        "DataType": "GameDateTimeData",
+        "DataVersion": 0,
+        "GameVersion": "0.3.3f15",
+        "ElapsedDays": 0,
+        "Time": 0
+    },
+    "Entries": [
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Earn $10,000 ($31,940 / $10,000)",
+            "State": 2
+        }
+    ]
+}

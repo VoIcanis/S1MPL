@@ -1,0 +1,31 @@
+{
+    "DataType": "MethProductData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "Name": "California Crystal",
+    "ID": "californiacrystal",
+    "DrugType": 1,
+    "Properties": [
+        "munchies",
+        "foggy",
+        "brighteyed",
+        "tropicthunder",
+        "glowie",
+        "antigravity",
+        "cyclopean"
+    ],
+    "AppearanceSettings": {
+        "MainColor": {
+            "r": 244,
+            "g": 225,
+            "b": 221,
+            "a": 255
+        },
+        "SecondaryColor": {
+            "r": 215,
+            "g": 187,
+            "b": 180,
+            "a": 255
+        }
+    }
+}

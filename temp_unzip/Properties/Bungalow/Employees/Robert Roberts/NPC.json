@@ -1,0 +1,30 @@
+{
+    "DataType": "PackagerData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "ID": "robert_roberts",
+    "AssignedProperty": "bungalow",
+    "FirstName": "Robert",
+    "LastName": "Roberts",
+    "IsMale": true,
+    "AppearanceIndex": 1,
+    "Position": {
+        "x": -173.1999969482422,
+        "y": -3.7099995613098146,
+        "z": 116.62637329101563
+    },
+    "Rotation": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": -1.7881393432617188e-7
+    },
+    "GUID": "bff949e6-2e70-4b78-ad31-7ea28f30db6d",
+    "PaidForToday": true,
+    "MoveItemData": {
+        "TemplateItemJSON": "",
+        "GrabbedItemQuantity": 0,
+        "SourceGUID": "",
+        "DestinationGUID": ""
+    }
+}

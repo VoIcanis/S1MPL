@@ -1,0 +1,83 @@
+{
+    "DataType": "QuestData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "GUID": "a63d0e02-84fa-4922-96a3-18cad4c05fc9",
+    "State": 2,
+    "IsTracked": true,
+    "Title": "We Need To Cook",
+    "Description": "You're not going to get too far if you're only pushing weed. Time to move onto something a bit harder.",
+    "Expires": false,
+    "ExpiryDate": {
+        "DataType": "GameDateTimeData",
+        "DataVersion": 0,
+        "GameVersion": "0.3.3f15",
+        "ElapsedDays": 0,
+        "Time": 0
+    },
+    "Entries": [
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Talk to Uncle Nelson at a payphone",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Unlock the pseudo supplier in Westville (see contacts app for more info)",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Purchase a chemistry station from Oscar",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Purchase a lab oven from Oscar",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Purchase acid from Oscar",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Purchase phosphorus from Oscar",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Message Shirley about buying some pseudo",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Cook liquid meth at the chemistry station",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Bake the liquid meth with the lab oven",
+            "State": 2
+        }
+    ]
+}

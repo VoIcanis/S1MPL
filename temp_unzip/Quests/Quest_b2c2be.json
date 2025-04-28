@@ -1,0 +1,28 @@
+{
+    "DataType": "DeaddropQuestData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "GUID": "b2c2beb5-7071-471e-ba33-2c3e7b2769e3",
+    "State": 2,
+    "IsTracked": true,
+    "Title": "Collect Dead Drop",
+    "Description": "Collect the dead drop behind Thompson Construction",
+    "Expires": false,
+    "ExpiryDate": {
+        "DataType": "GameDateTimeData",
+        "DataVersion": 0,
+        "GameVersion": "0.3.3f15",
+        "ElapsedDays": 0,
+        "Time": 0
+    },
+    "Entries": [
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Behind Thompson Construction",
+            "State": 2
+        }
+    ],
+    "DeaddropGUID": "766389cd-b2e3-44ec-84fe-9c59eccfcdd7"
+}

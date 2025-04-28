@@ -1,0 +1,15 @@
+{
+    "DataType": "WorldStorageEntityData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "GUID": "ae1b71b3-1eff-49d2-a038-9c7e2adb92c8",
+    "Contents": {
+        "Items": [
+            "{\"DataType\":\"QualityItemData\",\"DataVersion\":0,\"GameVersion\":\"0.3.3f15\",\"ID\":\"highqualitypseudo\",\"Quantity\":7,\"Quality\":\"Premium\"}",
+            "{\"DataType\":\"ItemData\",\"DataVersion\":0,\"GameVersion\":\"0.3.3f15\",\"ID\":\"\",\"Quantity\":0}",
+            "{\"DataType\":\"ItemData\",\"DataVersion\":0,\"GameVersion\":\"0.3.3f15\",\"ID\":\"\",\"Quantity\":0}",
+            "{\"DataType\":\"ItemData\",\"DataVersion\":0,\"GameVersion\":\"0.3.3f15\",\"ID\":\"\",\"Quantity\":0}",
+            "{\"DataType\":\"ItemData\",\"DataVersion\":0,\"GameVersion\":\"0.3.3f15\",\"ID\":\"\",\"Quantity\":0}"
+        ]
+    }
+}

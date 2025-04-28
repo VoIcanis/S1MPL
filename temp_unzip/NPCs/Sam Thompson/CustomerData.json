@@ -1,0 +1,44 @@
+{
+    "DataType": "CustomerData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "Dependence": 0.6962000131607056,
+    "PurchaseableProducts": [
+        "extremerhino",
+        "meth",
+        "deathdurkle"
+    ],
+    "ProductAffinities": [
+        -0.07261133193969727,
+        0.779590368270874,
+        -0.8023519515991211
+    ],
+    "TimeSinceLastDealCompleted": 749,
+    "TimeSinceLastDealOffered": 796,
+    "OfferedDeals": 10,
+    "CompletedDeals": 12,
+    "IsContractOffered": false,
+    "OfferedContract": {
+        "Payment": 0.0,
+        "Products": {
+            "entries": []
+        },
+        "DeliveryLocationGUID": "",
+        "DeliveryWindow": {
+            "IsEnabled": false,
+            "WindowStartTime": 1200,
+            "WindowEndTime": 1800
+        },
+        "Expires": false,
+        "ExpiresAfter": 0,
+        "PickupScheduleIndex": 0,
+        "IsCounterOffer": false
+    },
+    "OfferedContractTime": {
+        "elapsedDays": 12,
+        "time": 1330
+    },
+    "TimeSincePlayerApproached": 1015636,
+    "TimeSinceInstantDealOffered": 1015636,
+    "HasBeenRecommended": false
+}

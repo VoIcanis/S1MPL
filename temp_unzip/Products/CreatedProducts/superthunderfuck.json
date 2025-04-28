@@ -1,0 +1,32 @@
+{
+    "DataType": "MethProductData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "Name": "Super Thunderfuck",
+    "ID": "superthunderfuck",
+    "DrugType": 1,
+    "Properties": [
+        "sedating",
+        "slippery",
+        "foggy",
+        "brighteyed",
+        "tropicthunder",
+        "glowie",
+        "antigravity",
+        "cyclopean"
+    ],
+    "AppearanceSettings": {
+        "MainColor": {
+            "r": 180,
+            "g": 177,
+            "b": 214,
+            "a": 255
+        },
+        "SecondaryColor": {
+            "r": 171,
+            "g": 186,
+            "b": 224,
+            "a": 255
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "DataType": "MSGConversationData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "ConversationIndex": 11,
+    "Read": true,
+    "MessageHistory": [
+        {
+            "Sender": 1,
+            "MessageID": -1048195906,
+            "Text": "Ay bro you got 4x OG Kush? I'll pay <color=#46CB4F>$190</color> for it",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 0,
+            "MessageID": -264773706,
+            "Text": "Yep",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": -988562947,
+            "Text": "Cheers bro, I'll meet you <b>at the north waterfront</b> between 12:00 PM and 6:00 PM.",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": 1542857455,
+            "Text": "Yo homie, can I get 5x OG Kush? I'll pay <color=#46CB4F>$240</color>",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 0,
+            "MessageID": 1994108970,
+            "Text": "How about 5x Aspen Death for $280?",
+            "EndOfChain": false
+        },
+        {
+            "Sender": 1,
+            "MessageID": -1846755312,
+            "Text": "I guess that's fine bro. When?",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 0,
+            "MessageID": -1825346292,
+            "Text": "Late Night",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": -119339432,
+            "Text": "Sick as, I'll meet you <b>behind Sauerkraut Supreme pizzeria</b> between 12:00 AM and 6:00 AM.",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": 206730639,
+            "Text": "Whats up bro, I'm after 3x Banana Rhino. I can pay <color=#46CB4F>$325</color> for it.",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": -23640119,
+            "Text": "Don't worry about it",
+            "EndOfChain": true
+        }
+    ],
+    "ActiveResponses": [],
+    "IsHidden": false
+}

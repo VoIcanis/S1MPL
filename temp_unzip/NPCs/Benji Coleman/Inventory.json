@@ -1,0 +1,9 @@
+{
+    "Items": [
+        "{\"DataType\":\"WeedData\",\"DataVersion\":0,\"GameVersion\":\"0.3.3f15\",\"ID\":\"extremerhino\",\"Quantity\":20,\"Quality\":\"Standard\",\"PackagingID\":\"baggie\"}",
+        "{\"DataType\":\"MethData\",\"DataVersion\":0,\"GameVersion\":\"0.3.3f15\",\"ID\":\"meth\",\"Quantity\":4,\"Quality\":\"Poor\",\"PackagingID\":\"baggie\"}",
+        "{\"DataType\":\"WeedData\",\"DataVersion\":0,\"GameVersion\":\"0.3.3f15\",\"ID\":\"deathdurkle\",\"Quantity\":6,\"Quality\":\"Standard\",\"PackagingID\":\"baggie\"}",
+        "{\"DataType\":\"WeedData\",\"DataVersion\":0,\"GameVersion\":\"0.3.3f15\",\"ID\":\"extremerhino\",\"Quantity\":8,\"Quality\":\"Standard\",\"PackagingID\":\"baggie\"}",
+        "{\"DataType\":\"ItemData\",\"DataVersion\":0,\"GameVersion\":\"0.3.3f15\",\"ID\":\"\",\"Quantity\":0}"
+    ]
+}

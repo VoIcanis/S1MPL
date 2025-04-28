@@ -1,0 +1,41 @@
+{
+    "DataType": "QuestData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "GUID": "62bc41c0-a130-4b48-b7c9-08574b6dc331",
+    "State": 2,
+    "IsTracked": true,
+    "Title": "Getting Started",
+    "Description": "You're in a new town with no cash and no product. Get in contact with a distant relative and ask for some help.",
+    "Expires": false,
+    "ExpiryDate": {
+        "DataType": "GameDateTimeData",
+        "DataVersion": 0,
+        "GameVersion": "0.3.3f15",
+        "ElapsedDays": 0,
+        "Time": 0
+    },
+    "Entries": [
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Talk to the manager in the motel office",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Rent a motel room",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Check out your motel room",
+            "State": 2
+        }
+    ]
+}

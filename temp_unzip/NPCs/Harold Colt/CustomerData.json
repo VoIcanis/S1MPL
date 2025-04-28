@@ -1,0 +1,42 @@
+{
+    "DataType": "CustomerData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "Dependence": 0.0,
+    "PurchaseableProducts": [
+        "superthunderfuck"
+    ],
+    "ProductAffinities": [
+        -0.9472379684448242,
+        -0.782996416091919,
+        -0.6952059268951416
+    ],
+    "TimeSinceLastDealCompleted": 1015554,
+    "TimeSinceLastDealOffered": 1015554,
+    "OfferedDeals": 0,
+    "CompletedDeals": 0,
+    "IsContractOffered": false,
+    "OfferedContract": {
+        "Payment": 0.0,
+        "Products": {
+            "entries": []
+        },
+        "DeliveryLocationGUID": "",
+        "DeliveryWindow": {
+            "IsEnabled": false,
+            "WindowStartTime": 1200,
+            "WindowEndTime": 1800
+        },
+        "Expires": false,
+        "ExpiresAfter": 0,
+        "PickupScheduleIndex": 0,
+        "IsCounterOffer": false
+    },
+    "OfferedContractTime": {
+        "elapsedDays": 0,
+        "time": 0
+    },
+    "TimeSincePlayerApproached": 1015554,
+    "TimeSinceInstantDealOffered": 1015554,
+    "HasBeenRecommended": false
+}

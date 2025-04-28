@@ -1,0 +1,27 @@
+{
+    "DataType": "MethProductData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "Name": "Strawberry Cake",
+    "ID": "strawberrycake",
+    "DrugType": 1,
+    "Properties": [
+        "paranoia",
+        "calming",
+        "foggy"
+    ],
+    "AppearanceSettings": {
+        "MainColor": {
+            "r": 243,
+            "g": 223,
+            "b": 229,
+            "a": 255
+        },
+        "SecondaryColor": {
+            "r": 249,
+            "g": 234,
+            "b": 232,
+            "a": 255
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "DataType": "QuestData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "GUID": "85bc22f9-c4c9-438c-b38d-e046e84330b6",
+    "State": 0,
+    "IsTracked": false,
+    "Title": "Cleaners",
+    "Description": "Learn how to manage cleaners.",
+    "Expires": false,
+    "ExpiryDate": {
+        "DataType": "GameDateTimeData",
+        "DataVersion": 0,
+        "GameVersion": "0.3.3f15",
+        "ElapsedDays": 0,
+        "Time": 0
+    },
+    "Entries": [
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Use the management clipboard to assign the cleaner to a bed",
+            "State": 0
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Assign a trash can to the cleaner",
+            "State": 0
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Place cash in the briefcase on the cleaner's bed",
+            "State": 0
+        }
+    ]
+}

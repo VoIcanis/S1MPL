@@ -1,0 +1,10 @@
+{
+    "DataType": "GameData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "OrganisationName": "Feel Good Inc",
+    "Seed": 450461059,
+    "Settings": {
+        "ConsoleEnabled": false
+    }
+}

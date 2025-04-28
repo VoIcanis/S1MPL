@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>S1MPL<span id="versionDisplay"></span></title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        font-family: sans-serif;
+        background: #111;
+        color: #ddd;
+      }
+    
+      #titlebar {
+        -webkit-app-region: drag;
+        height: 30px;
+        width: 100%;
+        background-color: #222;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0px;
+        user-select: none;
+      }
+    
+      #title {
+        font-weight: bold;
+        font-size: 14px;
+        margin-left: 4px;
+      }
+
+      #versionDisplay {
+        font-size: 10px;
+        font-weight: normal;
+        color: #aaa;
+        margin-left: 1px;
+      }
+    
+      #window-controls {
+        display: flex;
+        gap: 1px;
+      }
+    
+      #window-controls button {
+        -webkit-app-region: no-drag;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 14px;
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        margin: 0;
+        line-height: 28px;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+      }
+    
+      #window-controls button:hover {
+        background: #444;
+      }
+    </style>    
+    <style>
+      .container {
+        position: absolute;
+        top: 30px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow-y: auto;
+        padding: 12px;
+        padding-top: 0;
+        box-sizing: border-box;
+      }
+    
+      h1, h3 {
+        color: #fff;
+        margin-top: 24px;
+      }
+    
+      section {
+        margin-bottom: 24px;
+        border: 1px solid #333;
+        padding: 12px;
+        border-radius: 6px;
+        background-color: #1a1a1a;
+      }
+
+      section.tight-section {
+        margin-bottom: 12px;
+      }
+    
+      label, input, select, button {
+        font-size: 14px;
+        margin-top: 4px;
+        margin-bottom: 8px;
+      }
+    
+      button {
+        background: #333;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    
+      button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    
+      button:hover:enabled {
+        background: #444;
+      }
+    
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+    
+      ul li {
+        padding: 4px;
+        margin-bottom: 2px;
+        background: #222;
+        border-radius: 4px;
+      }
+    
+      input[type="file"], input[type="text"], input[type="placeholder"], select {
+        padding: 6px;
+        background: #222;
+        color: white;
+        border: 1px solid #444;
+        border-radius: 4px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+      }
+    
+      .row > * {
+        flex-grow: 1;
+      }
+    
+      .button-group {
+        display: flex;
+        gap: 8px;
+        margin-top: 8px;
+      }
+
+      /* Scrollbar for container */
+      .container::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .container::-webkit-scrollbar-track {
+        background: #1a1a1a;
+      }
+
+      .container::-webkit-scrollbar-thumb {
+        background-color: #555;
+        border-radius: 4px;
+      }
+
+      .container::-webkit-scrollbar-thumb:hover {
+        background-color: #777;
+      }
+
+      .steamid-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .steamid-row input {
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .steamid-row button {
+        width: 60px;
+      }
+
+      .tabs {
+        display: flex;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: -1px;
+      }
+
+      .tab-btn {
+        background: transparent;
+        color: #ccc;
+        padding: 8px 16px;
+        cursor: pointer;
+        border: 1px solid transparent;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        margin-right: 4px;
+        font-weight: 500;
+      }
+
+      .tab-btn:hover:not(.active) {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .tab-btn.active {
+        border-color: rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid #1a1a1a;
+        color: white;
+        margin-bottom: 0px;
+        font-weight: bold;
+      }
+
+      .tab-content {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: none;
+        padding: 12px;
+        padding-bottom: 0px;
+        border-radius: 0 0 6px 6px;
+      }
+    </style>    
+  </head>
+  <body>
+    <div id="titlebar">
+  <div id="title">S1MPL <span id="versionDisplay"></span></div>
+    <div id="window-controls">
+      <button id="min-btn">–</button>
+      <button id="max-btn">⬜</button>
+      <button id="close-btn">✕</button>
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <h1>Schedule 1 Multi-Player Loader</h1>
+
+    <section>
+      <div class="row steamid-row">
+        <label for="steamid">SteamID:</label>
+        <input id="steamid" placeholder="Steam ID (auto-filled)" style="-webkit-app-region: no-drag;" disabled>
+        <button id="editSteamBtn" onclick="toggleSteamEdit()">Edit</button>
+      </div>         
+    </section>
+  
+    <section>   
+      <div class="row">
+        <button onclick="load()">Refresh Local Saves</button>
+        <button onclick="window.api.openFolder('save')">Open Save Data</button>    
+        <button onclick="window.api.openFolder('player')">Open Player Data</button>    
+        <button onclick="window.api.openFolder('game')">Open Game Data</button>       
+      </div>
+  
+      <ul id="saves"></ul>
+    </section>
+
+    <div class="tabs">
+      <button class="tab-btn active" onclick="showTab('one')">Game Saves</button>
+      <button class="tab-btn" onclick="showTab('two')">Extract Player</button>
+      <button class="tab-btn" onclick="showTab('three')">Inject Player</button>
+    </div>
+    
+    
+    <div id="tab-one" class="tab-content">
+      <section class="tight-section">
+        <input type="file" id="zipfile">
+        <div class="button-group">
+          <button onclick="injectSave()">Import Save</button>
+          <button onclick="extractSave()">Extract Save to Zip</button>
+        </div>
+      </section>
+    </div>
+
+    <div id="tab-two" class="tab-content" style="display:none;">
+      <section class="tight-section">
+        <ul id="players"></ul>
+        <div class="row">
+          <input type="text" id="playerName" placeholder="Name for extracted player folder" style="-webkit-app-region: no-drag;">
+          <button onclick="extractPlayer()">Extract Player</button>
+        </div>
+      </section>
+    </div>
+
+    <div id="tab-three" class="tab-content" style="display:none;">
+      <section class="tight-section">
+        <div class="row">
+          <select id="playerdataList">
+            <option disabled selected>Loading...</option>
+          </select>
+        </div>
+        <div class="button-group">
+          <button id="injectMainBtn" onclick="injectAsMain()" disabled>Inject as Main (Player_0)</button>
+          <button id="injectSecondaryBtn" onclick="injectAsSecondary()" disabled>Inject as Secondary (Player_SteamID)</button>
+        </div>
+      </section>
+    </div>    
+  </div>
+  
+
+    
+    <script>
+      let selectedSlot = null;
+      let steamID = null;
+      let base = null;
+      let selectedPlayerFolder = null;
+
+      window.onload = async () => {
+        window.api.getAppVersion().then(version => {
+          document.getElementById('versionDisplay').textContent = `v${version}`;
+        });
+
+        await load();
+        await loadPlayerdataList();
+      };
+    
+      async function load() {
+        const data = await window.api.getSaves();
+        steamID = data.steamID;
+        base = data.base;
+        document.getElementById('steamid').value = steamID;
+    
+        const ul = document.getElementById('saves');
+        ul.innerHTML = '';
+        data.slots.forEach(s => {
+          const li = document.createElement('li');
+          li.innerText = s.name;
+          li.style.cursor = 'pointer';
+
+          if (!s.exists) {
+            li.style.opacity = 0.6;
+            li.style.fontStyle = 'italic';
+          }
+
+          li.onclick = async () => {
+            selectedSlot = s.path;
+            [...ul.children].forEach(child => (child.style.fontWeight = 'normal'));
+            li.style.fontWeight = 'bold';
+
+            const playersUl = document.getElementById('players');
+            playersUl.innerHTML = s.exists ? 'Loading...' : '[Empty slot — no players yet]';
+
+            if (s.exists) {
+              const playerList = await window.api.getPlayers(s.path);
+              playersUl.innerHTML = '';
+
+              playerList.forEach(p => {
+                const playerLi = document.createElement('li');
+                playerLi.innerText =
+                  `${p.folder} (${p.steamID || p.error})` + (p.isMain ? ' [MAIN]' : '');
+                playerLi.style.cursor = 'pointer';
+                playerLi.onclick = () => {
+                  selectedPlayerFolder = p.folder;
+                  [...playersUl.children].forEach(child => (child.style.fontWeight = 'normal'));
+                  playerLi.style.fontWeight = 'bold';
+                };
+                playersUl.appendChild(playerLi);
+              });
+            }
+            updateInjectButtonState();
+          };
+
+          ul.appendChild(li);
+        });
+      }
+    
+      async function injectSave() {
+        const fileInput = document.getElementById('zipfile');
+        if (!fileInput.files.length || !selectedSlot) {
+          alert('Select a zip and a save slot.');
+          return;
+        }
+
+        const zip = fileInput.files[0].path;
+        const id = document.getElementById('steamid').value;
+
+        const existsCheck = await window.api.saveSlotExists(selectedSlot);
+        if (existsCheck.exists) {
+          const confirmOverwrite = confirm('This SaveGame already exists. Overwrite it?');
+          if (!confirmOverwrite) return;
+        }
+
+        const result = await window.api.importZip(zip, selectedSlot, id);
+        if (result.success) alert('Save imported!');
+        else alert('Failed: ' + result.error);
+      }
+
+      async function extractSave() {
+        if (!selectedSlot) {
+          alert('Select a save slot to extract.');
+          return;
+        }
+
+        const result = await window.api.zipSave(selectedSlot);
+        if (result.success) {
+          alert(`Save extracted to ./savedata/${result.filename}`);
+        } else {
+          alert('Failed to extract save: ' + result.error);
+        }
+      }
+
+      async function extractPlayer() {
+        const nameInput = document.getElementById('playerName');
+        const customName = nameInput.value.trim();
+
+        if (!selectedSlot || !selectedPlayerFolder) {
+          alert('Select a save slot and player first.');
+          return;
+        }
+
+        if (!customName) {
+          alert('Please enter a name for the extracted player.');
+          return;
+        }
+
+        const result = await window.api.extractPlayer(selectedSlot, selectedPlayerFolder, customName);
+        if (result.success) {
+          alert(`Player extracted successfully to ./playerdata/${customName}`);
+        } else {
+          alert('Error extracting player: ' + result.error);
+        }
+      }
+
+      async function loadPlayerdataList() {
+        const list = await window.api.getExtractedPlayers();
+        const dropdown = document.getElementById('playerdataList');
+        dropdown.innerHTML = '';
+
+        // Add default option first
+        const defaultOption = document.createElement('option');
+        defaultOption.disabled = true;
+        defaultOption.selected = true;
+        defaultOption.textContent = 'Select a Player';
+        dropdown.appendChild(defaultOption);
+
+        // Add all extracted player options
+        list.forEach(p => {
+          const option = document.createElement('option');
+          option.value = p.folder;
+          option.innerText = `${p.folder} (${p.steamID})`;
+          dropdown.appendChild(option);
+        });
+
+        dropdown.onchange = updateInjectButtonState;
+        updateInjectButtonState();
+      }
+
+      async function injectAsMain() {
+        const selectedExtracted = document.getElementById('playerdataList').value;
+        if (!selectedSlot || !selectedExtracted) {
+          alert('Select a save slot and player first.');
+          return;
+        }
+
+        const check = await window.api.checkInjectConflict(selectedSlot, selectedExtracted, true);
+
+        if (check.conflict === 'secondaryExists') {
+          const confirmDelete = confirm(
+            `A secondary folder (Player_${check.steamID}) already exists. It must be deleted before injecting as main.\nDelete it now?`
+          );
+          if (!confirmDelete) return;
+
+          const toDelete = window.api.deletePlayerFolder
+            ? await window.api.deletePlayerFolder(selectedSlot, `Player_${check.steamID}`)
+            : null;
+        }
+
+        await injectPlayer('Player_0');
+      }
+
+      async function injectPlayer(targetFolderName) {
+        const selectedExtracted = document.getElementById('playerdataList').value;
+        if (!selectedSlot || !selectedExtracted) {
+          alert('Select a save slot and a player from playerdata.');
+          return;
+        }
+
+        const confirmOverwrite = await window.api.checkPlayerFolder(selectedSlot, targetFolderName);
+        if (confirmOverwrite.exists) {
+          const overwrite = confirm(`${targetFolderName} already exists in this save. Overwrite?`);
+          if (!overwrite) return;
+        }
+
+        const result = await window.api.injectPlayer(
+          selectedSlot,
+          selectedExtracted,
+          targetFolderName
+        );
+
+        if (result.success) {
+          alert(`Injected ${selectedExtracted} into ${targetFolderName}`);
+        } else {
+          alert('Failed to inject: ' + result.error);
+        }
+      }
+
+      async function injectAsSecondary() {
+        const selectedExtracted = document.getElementById('playerdataList').value;
+        if (!selectedExtracted) {
+          alert('Please select a player to inject.');
+          return;
+        }
+
+        const check = await window.api.checkInjectConflict(selectedSlot, selectedExtracted, false);
+
+        if (check.conflict === 'sameAsMain') {
+          alert(`This player (${check.steamID}) is already assigned as Player_0.\nInject a different main player first.`);
+          return;
+        }
+
+        const targetFolderName = `Player_${check.steamID}`;
+
+        const confirmOverwrite = await window.api.checkPlayerFolder(selectedSlot, targetFolderName);
+        if (confirmOverwrite.exists) {
+          const overwrite = confirm(`${targetFolderName} already exists in this save. Overwrite?`);
+          if (!overwrite) return;
+        }
+
+        const result = await window.api.injectPlayer(
+          selectedSlot,
+          selectedExtracted,
+          targetFolderName
+        );
+
+        if (result.success) {
+          alert(`Injected ${selectedExtracted} as secondary: ${targetFolderName}`);
+        } else {
+          alert('Failed to inject: ' + result.error);
+        }
+      }
+
+      function updateInjectButtonState() {
+        const playerList = document.getElementById('playerdataList');
+        const selectedOption = playerList.selectedOptions[0];
+        const labelText = selectedOption ? selectedOption.textContent : '';
+        const steamIdMatch = labelText.match(/\((\d{17})\)/);
+        const extractedSteamId = steamIdMatch ? steamIdMatch[1] : '';
+
+        // Determine if player is selected
+        const playerSelected = playerList.value && extractedSteamId;
+
+        // Determine if save slot is selected AND exists (non-empty)
+        const saveSelected = selectedSlot && document.querySelector(`#saves li[style*="font-weight: bold"]`)?.style?.opacity !== '0.6';
+
+        const mainBtn = document.getElementById('injectMainBtn');
+        const secondaryBtn = document.getElementById('injectSecondaryBtn');
+
+        secondaryBtn.innerText = extractedSteamId
+          ? `Inject as Secondary (Player_${extractedSteamId})`
+          : 'Inject as Secondary';
+
+        const enable = playerSelected && saveSelected;
+
+        mainBtn.disabled = !enable;
+        secondaryBtn.disabled = !enable;
+      }
+
+      document.getElementById('min-btn').onclick = () => {
+        window.api.windowControl('minimize');
+      };
+      document.getElementById('max-btn').onclick = () => {
+        window.api.windowControl('maximize');
+      };
+      document.getElementById('close-btn').onclick = () => {
+        window.api.windowControl('close');
+      };
+
+      function toggleSteamEdit() {
+        const input = document.getElementById('steamid');
+        const button = document.getElementById('editSteamBtn');
+        
+        if (input.disabled) {
+          input.disabled = false;
+          input.focus();
+          button.innerText = 'Lock';
+        } else {
+          input.disabled = true;
+          button.innerText = 'Edit';
+        }
+      }
+
+      function showTab(tab) {
+        document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+
+        document.getElementById('tab-' + tab).style.display = 'block';
+        event.target.classList.add('active');
+      }
+    </script>
+    
+    
+  </body>
+</html>

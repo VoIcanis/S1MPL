@@ -1,0 +1,29 @@
+{
+    "DataType": "MSGConversationData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "ConversationIndex": 2,
+    "Read": true,
+    "MessageHistory": [
+        {
+            "Sender": 1,
+            "MessageID": -64995864,
+            "Text": "Hey, if you got 1x Super Thunderfuck I'll pay <color=#46CB4F>$355</color> for it. Deal?",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 0,
+            "MessageID": 702969908,
+            "Text": "How about 1x Super Thunderfuck for $365?",
+            "EndOfChain": false
+        },
+        {
+            "Sender": 1,
+            "MessageID": -1157255955,
+            "Text": "Nope - nevermind",
+            "EndOfChain": true
+        }
+    ],
+    "ActiveResponses": [],
+    "IsHidden": false
+}

@@ -1,0 +1,41 @@
+{
+    "DataType": "QuestData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "GUID": "0de99478-27ef-4cc5-83a0-d6c62cb7001d",
+    "State": 2,
+    "IsTracked": true,
+    "Title": "Chemists",
+    "Description": "Learn how to manage chemists.",
+    "Expires": false,
+    "ExpiryDate": {
+        "DataType": "GameDateTimeData",
+        "DataVersion": 0,
+        "GameVersion": "0.3.3f15",
+        "ElapsedDays": 0,
+        "Time": 0
+    },
+    "Entries": [
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Use the management clipboard to assign the chemist to a bed",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Assign a station to the chemist",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Place cash in the briefcase on the chemist's bed",
+            "State": 2
+        }
+    ]
+}

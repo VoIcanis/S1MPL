@@ -1,0 +1,38 @@
+{
+    "DataType": "WeedProductData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "Name": "Wedding Ass",
+    "ID": "weddingass",
+    "DrugType": 0,
+    "Properties": [
+        "refreshing",
+        "tropicthunder"
+    ],
+    "AppearanceSettings": {
+        "MainColor": {
+            "r": 103,
+            "g": 123,
+            "b": 82,
+            "a": 255
+        },
+        "SecondaryColor": {
+            "r": 196,
+            "g": 189,
+            "b": 105,
+            "a": 255
+        },
+        "LeafColor": {
+            "r": 149,
+            "g": 156,
+            "b": 93,
+            "a": 255
+        },
+        "StemColor": {
+            "r": 82,
+            "g": 98,
+            "b": 65,
+            "a": 255
+        }
+    }
+}

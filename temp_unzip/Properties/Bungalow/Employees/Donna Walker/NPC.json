@@ -1,0 +1,30 @@
+{
+    "DataType": "ChemistData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "ID": "donna_walker",
+    "AssignedProperty": "bungalow",
+    "FirstName": "Donna",
+    "LastName": "Walker",
+    "IsMale": false,
+    "AppearanceIndex": 2,
+    "Position": {
+        "x": -168.640625,
+        "y": -4.047341346740723,
+        "z": 110.6737289428711
+    },
+    "Rotation": {
+        "x": 0.0,
+        "y": 0.6941209435462952,
+        "z": 0.0,
+        "w": 0.7198584079742432
+    },
+    "GUID": "e4eb58e7-8fc8-46d6-8fec-11b39b7e7fce",
+    "PaidForToday": true,
+    "MoveItemData": {
+        "TemplateItemJSON": "",
+        "GrabbedItemQuantity": 0,
+        "SourceGUID": "",
+        "DestinationGUID": ""
+    }
+}

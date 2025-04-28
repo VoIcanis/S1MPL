@@ -1,0 +1,30 @@
+{
+    "DataType": "ChemistData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "ID": "daniel_johnson",
+    "AssignedProperty": "bungalow",
+    "FirstName": "Daniel",
+    "LastName": "Johnson",
+    "IsMale": true,
+    "AppearanceIndex": 4,
+    "Position": {
+        "x": -168.98275756835938,
+        "y": -3.9958813190460207,
+        "z": 111.9387435913086
+    },
+    "Rotation": {
+        "x": 0.0,
+        "y": 0.667593240737915,
+        "z": 0.0,
+        "w": 0.744526207447052
+    },
+    "GUID": "cfcfcf54-0f0d-421d-974e-0738e27551d4",
+    "PaidForToday": true,
+    "MoveItemData": {
+        "TemplateItemJSON": "",
+        "GrabbedItemQuantity": 0,
+        "SourceGUID": "",
+        "DestinationGUID": ""
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "DataType": "GenericSaveData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "GUID": "66eaa502-686a-4bf5-bb93-39ea5d62d7b0",
+    "boolValues": [
+        {
+            "key": "broken",
+            "value": false
+        }
+    ],
+    "floatValues": [],
+    "intValues": [
+        {
+            "key": "daysUntilRepair",
+            "value": 0
+        }
+    ],
+    "stringValues": []
+}

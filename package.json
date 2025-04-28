@@ -1,0 +1,53 @@
+{
+  "name": "schedule-one-multi-player-loader",
+  "description": "Schedule One Multi-Player Loader for managing local saves",
+  "author": "Empasm",
+  "version": "1.0.4",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.s1mpl.loader",
+    "productName": "S1MPL",
+    "files": [
+      "**/*",
+      "playerdata/**/*",
+      "savedata/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "playerdata",
+        "to": "playerdata"
+      },
+      {
+        "from": "savedata",
+        "to": "savedata"
+      }
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "icon": "assets/icon.ico",
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true
+    }
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "fs-extra": "^11.1.1"
+  },
+  "devDependencies": {
+    "electron": "^28.1.0",
+    "electron-builder": "^26.0.12"
+  }
+}

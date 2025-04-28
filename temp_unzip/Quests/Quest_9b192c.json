@@ -1,0 +1,55 @@
+{
+    "DataType": "QuestData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "GUID": "9b192cde-b87f-4ee7-8f43-b8e3775a04c7",
+    "State": 2,
+    "IsTracked": true,
+    "Title": "Wretched Hive of Scum and Villainy",
+    "Description": "Acquaint yourself with the inhabitants of the warehouse, the local place of business for people in your line of work.",
+    "Expires": false,
+    "ExpiryDate": {
+        "DataType": "GameDateTimeData",
+        "DataVersion": 0,
+        "GameVersion": "0.3.3f15",
+        "ElapsedDays": 0,
+        "Time": 0
+    },
+    "Entries": [
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Talk to Uncle Nelson at a payphone",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Gain access to the warehouse",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Talk to the merchant",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Talk to the arms dealer",
+            "State": 2
+        },
+        {
+            "DataType": "QuestEntryData",
+            "DataVersion": 0,
+            "GameVersion": "0.3.3f15",
+            "Name": "Talk to the fixer",
+            "State": 2
+        }
+    ]
+}

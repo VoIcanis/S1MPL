@@ -1,0 +1,39 @@
+{
+    "DataType": "WeedProductData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "Name": "Banana Rhino",
+    "ID": "bananarhino",
+    "DrugType": 0,
+    "Properties": [
+        "refreshing",
+        "gingeritis",
+        "tropicthunder"
+    ],
+    "AppearanceSettings": {
+        "MainColor": {
+            "r": 103,
+            "g": 123,
+            "b": 82,
+            "a": 255
+        },
+        "SecondaryColor": {
+            "r": 158,
+            "g": 150,
+            "b": 86,
+            "a": 255
+        },
+        "LeafColor": {
+            "r": 130,
+            "g": 136,
+            "b": 84,
+            "a": 255
+        },
+        "StemColor": {
+            "r": 82,
+            "g": 98,
+            "b": 65,
+            "a": 255
+        }
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "DataType": "MSGConversationData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "ConversationIndex": 0,
+    "Read": true,
+    "MessageHistory": [
+        {
+            "Sender": 1,
+            "MessageID": -274330357,
+            "Text": "I'm after 2x OG Kush. I can pay <color=#46CB4F>$80</color> for it Deal??",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 0,
+            "MessageID": -62412231,
+            "Text": "Deal",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": 722672535,
+            "Text": "Good!! I'll see u <b>on the wharf west of the warehouse</b> between 6:00 AM and 12:00 PM.",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": -1375526316,
+            "Text": "I NEED 1x Death Durkle. I GOT <color=#46CB4F>$75</color>. DEAL?",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 0,
+            "MessageID": -502154619,
+            "Text": "Sure thing",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": 703134119,
+            "Text": "Good!! I'll see u <b>on the west wharf</b> between 12:00 AM and 6:00 AM.",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": -1092944442,
+            "Text": "I'm after 2x Wedding Ass. I can pay <color=#46CB4F>$165</color> for it Deal??",
+            "EndOfChain": true
+        },
+        {
+            "Sender": 1,
+            "MessageID": 1117605362,
+            "Text": "Forget it!",
+            "EndOfChain": true
+        }
+    ],
+    "ActiveResponses": [],
+    "IsHidden": false
+}

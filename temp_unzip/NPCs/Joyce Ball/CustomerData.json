@@ -1,0 +1,43 @@
+{
+    "DataType": "CustomerData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "Dependence": 0.48000001907348635,
+    "PurchaseableProducts": [
+        "meth",
+        "granddaddypurple"
+    ],
+    "ProductAffinities": [
+        1.0,
+        1.0,
+        -0.6399999856948853
+    ],
+    "TimeSinceLastDealCompleted": 987,
+    "TimeSinceLastDealOffered": 1036,
+    "OfferedDeals": 5,
+    "CompletedDeals": 5,
+    "IsContractOffered": false,
+    "OfferedContract": {
+        "Payment": 0.0,
+        "Products": {
+            "entries": []
+        },
+        "DeliveryLocationGUID": "",
+        "DeliveryWindow": {
+            "IsEnabled": false,
+            "WindowStartTime": 1200,
+            "WindowEndTime": 1800
+        },
+        "Expires": false,
+        "ExpiresAfter": 0,
+        "PickupScheduleIndex": 0,
+        "IsCounterOffer": false
+    },
+    "OfferedContractTime": {
+        "elapsedDays": 12,
+        "time": 930
+    },
+    "TimeSincePlayerApproached": 1015555,
+    "TimeSinceInstantDealOffered": 1015555,
+    "HasBeenRecommended": false
+}

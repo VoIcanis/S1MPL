@@ -1,0 +1,189 @@
+{
+    "DataType": "ProductManagerData",
+    "DataVersion": 0,
+    "GameVersion": "0.3.3f15",
+    "DiscoveredProducts": [
+        "ogkush",
+        "sourdiesel",
+        "greencrack",
+        "granddaddypurple",
+        "aspencake",
+        "aspendeath",
+        "bananarhino",
+        "darkbud",
+        "deathdurkle",
+        "dreamdeath",
+        "extremerhino",
+        "strawberrycake",
+        "weddingass",
+        "meth",
+        "nightmaresplooge",
+        "biobud",
+        "nightmaregrool",
+        "californiacrystal",
+        "superthunderfuck"
+    ],
+    "ListedProducts": [
+        "superthunderfuck"
+    ],
+    "ActiveMixOperation": {
+        "ProductID": "",
+        "IngredientID": ""
+    },
+    "IsMixComplete": false,
+    "MixRecipes": [
+        {
+            "Product": "ogkush",
+            "Mixer": "viagra",
+            "Output": "aspendeath"
+        },
+        {
+            "Product": "sourdiesel",
+            "Mixer": "viagra",
+            "Output": "weddingass"
+        },
+        {
+            "Product": "weddingass",
+            "Mixer": "banana",
+            "Output": "bananarhino"
+        },
+        {
+            "Product": "greencrack",
+            "Mixer": "banana",
+            "Output": "deathdurkle"
+        },
+        {
+            "Product": "greencrack",
+            "Mixer": "viagra",
+            "Output": "dreamdeath"
+        },
+        {
+            "Product": "granddaddypurple",
+            "Mixer": "viagra",
+            "Output": "extremerhino"
+        },
+        {
+            "Product": "meth",
+            "Mixer": "cuke",
+            "Output": "aspencake"
+        },
+        {
+            "Product": "aspencake",
+            "Mixer": "paracetamol",
+            "Output": "darkbud"
+        },
+        {
+            "Product": "darkbud",
+            "Mixer": "megabean",
+            "Output": "strawberrycake"
+        },
+        {
+            "Product": "motoroil",
+            "Mixer": "strawberrycake",
+            "Output": "nightmaresplooge"
+        },
+        {
+            "Product": "cuke",
+            "Mixer": "nightmaresplooge",
+            "Output": "biobud"
+        },
+        {
+            "Product": "megabean",
+            "Mixer": "biobud",
+            "Output": "nightmaregrool"
+        },
+        {
+            "Product": "viagra",
+            "Mixer": "nightmaregrool",
+            "Output": "californiacrystal"
+        },
+        {
+            "Product": "flumedicine",
+            "Mixer": "californiacrystal",
+            "Output": "superthunderfuck"
+        }
+    ],
+    "ProductPrices": [
+        {
+            "String": "ogkush",
+            "Int": 37
+        },
+        {
+            "String": "sourdiesel",
+            "Int": 40
+        },
+        {
+            "String": "greencrack",
+            "Int": 43
+        },
+        {
+            "String": "granddaddypurple",
+            "Int": 44
+        },
+        {
+            "String": "meth",
+            "Int": 70
+        },
+        {
+            "String": "cocaine",
+            "Int": 150
+        },
+        {
+            "String": "aspencake",
+            "Int": 85
+        },
+        {
+            "String": "aspendeath",
+            "Int": 60
+        },
+        {
+            "String": "bananarhino",
+            "Int": 90
+        },
+        {
+            "String": "darkbud",
+            "Int": 87
+        },
+        {
+            "String": "deathdurkle",
+            "Int": 70
+        },
+        {
+            "String": "dreamdeath",
+            "Int": 75
+        },
+        {
+            "String": "extremerhino",
+            "Int": 80
+        },
+        {
+            "String": "strawberrycake",
+            "Int": 102
+        },
+        {
+            "String": "weddingass",
+            "Int": 70
+        },
+        {
+            "String": "nightmaresplooge",
+            "Int": 139
+        },
+        {
+            "String": "biobud",
+            "Int": 151
+        },
+        {
+            "String": "nightmaregrool",
+            "Int": 227
+        },
+        {
+            "String": "californiacrystal",
+            "Int": 274
+        },
+        {
+            "String": "superthunderfuck",
+            "Int": 320
+        }
+    ],
+    "FavouritedProducts": []
+}
