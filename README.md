@@ -1,3 +1,5 @@
+# 🚀 [Download Latest Version Here](https://github.com/VoIcanis/S1MPL/releases)
+
 # S1MPL — Schedule 1 Multiplayer Loader
 
 **S1MPL** (Schedule 1 Multiplayer Loader) is a lightweight, standalone tool for managing save data and player characters for the game **Schedule I**.
@@ -6,6 +8,14 @@
 - 📂 Manage local saves and player data folders easily
 - 🔒 100% offline, secure, no server needed
 - 🎯 Minimal, fast, easy-to-use Electron app
+
+---
+
+## 📥 Download
+
+The latest compiled `.exe` is available on the [Releases page](https://github.com/VoIcanis/S1MPL/releases).
+
+If you want just the source code (and know how to build Electron apps), you can clone this repository.
 
 ---
 
@@ -46,12 +56,13 @@
 
 ## How To Use
 
-1. **Open S1MPL.exe**
-2. **Refresh Saves** using the `Refresh Local Saves` button
-3. **Manage Your Saves:**
+1. Download the `.exe` from the [Releases page](https://github.com/VoIcanis/S1MPL/releases).
+2. Run **S1MPL.exe** (run as admin if needed).
+3. **Refresh Saves** using the `Refresh Local Saves` button.
+4. **Manage Your Saves:**
    - Import `.zip` save files into the game
    - Export saves to `.zip` backups
-4. **Manage Players:**
+5. **Manage Players:**
    - Extract players from a save
    - Inject players into new or existing save slots
 
@@ -73,10 +84,6 @@ Use at your own risk.
 
 ---
 
-# 🎮 Enjoy your multiplayer adventures!
-
----
-
 # 📂 Folder Layout Example
 ```
 S1MPL/
@@ -86,7 +93,9 @@ S1MPL/
 ├── savedata/
 ```
 
+---
+
 # 🛡️ Final Reminder
 
 Always back up your original saves before modifying anything!  
-S1MPL will help make multiplayer easier — but your data is your responsibility.
+S1MPL makes multiplayer sharing easier — but your data is your responsibility.
